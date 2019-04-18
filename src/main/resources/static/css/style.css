@@ -1,5 +1,5 @@
 body{
-    min-width: 320px;
+    min-width: 270px;
     font-family: Unbuntu, monospace;
 }
 
@@ -119,9 +119,10 @@ body{
     font-size: 52px;
     padding: 8px 12px;
     position: absolute;
-    top: 40%;
+    top: 30%;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
+    text-align: center;
     background: rgba(0,0,0,0.5);
     left: 50%;
     margin-right: -50%;
@@ -149,8 +150,9 @@ body{
     position: absolute;
     top: 91%;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     background: #F26B47;
+    text-align: center;
     width: 100%;
 }
 
@@ -292,7 +294,7 @@ body{
 
 /************************Gray panel********************************/
 .panel-grey {
-    height: 250px;
+    min-height: 250px;
     background: grey;
     color: white;
     display: flex;
@@ -467,6 +469,14 @@ form button {
 
     .map,.contact {
         width: 100vw;
+    }
+
+    .ico-txt {
+        width: 100%;
+    }
+
+    .сopyright {
+        font-size: 15px;
     }
 }
 
