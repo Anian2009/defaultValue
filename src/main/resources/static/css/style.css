@@ -136,7 +136,8 @@ body{
     position: absolute;
     top: 60%;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
+    text-align: center;
     background: rgba(0,0,0,0.5);
     left: 50%;
     margin-right: -50%;
