@@ -121,7 +121,7 @@ body{
     position: absolute;
     top: 30%;
     display: flex;
-    /*justify-content: center;*/
+    justify-content: center;
     text-align: center;
     background: rgba(0,0,0,0.5);
     left: 50%;
@@ -136,7 +136,7 @@ body{
     position: absolute;
     top: 60%;
     display: flex;
-    /*justify-content: center;*/
+    justify-content: center;
     text-align: center;
     background: rgba(0,0,0,0.5);
     left: 50%;
@@ -151,7 +151,7 @@ body{
     position: absolute;
     top: 91%;
     display: flex;
-    /*justify-content: center;*/
+    justify-content: center;
     background: #F26B47;
     text-align: center;
     width: 100%;
