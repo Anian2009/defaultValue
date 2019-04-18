@@ -37,6 +37,7 @@ body{
 .link {
     color: black;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .one img{
@@ -416,7 +417,7 @@ form button {
     .navigation {
         display: flex;
         flex-direction: column-reverse;
-        top: -150px;
+        top: -180px;
     }
 
     .menu-button {
@@ -486,5 +487,5 @@ form button {
 }
 
 .cont-active {
-    top:260px;
+    top:290px;
 }
