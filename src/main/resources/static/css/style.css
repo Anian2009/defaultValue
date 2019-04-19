@@ -107,7 +107,6 @@ body{
     position: relative;
     margin-bottom: 40px;
     flex-direction: column;
-    /*font-size: 1em;*/
 }
 
 .slides img {
@@ -206,7 +205,6 @@ body{
     color: red;
     text-decoration: underline;
     margin-bottom: 30px;
-    /*padding-top: 30px;*/
 }
 
 .info-title span {
@@ -368,8 +366,6 @@ form button {
     margin-top: 250px;
 }
 
-
-
 @media (max-width: 960px) {
     .two {
         width: 77%;
@@ -377,12 +373,7 @@ form button {
     body {
         font-size: 15px;
     }
-    /*.first-text,.second-text {*/
-    /*    font-size: 27px;*/
-    /*}*/
-    /*.thread-text {*/
-    /*    font-size: 18px;*/
-    /*}*/
+
     .ico-txt, form input {
         width: 80%;
     }
@@ -458,8 +449,26 @@ form button {
         width: 80vw;
         margin: 25px 10px;
     }
+    .ico-txt p{
+        font-size: 150%;
+    }
     .previous, .next {
         margin: -8% 10px 0 10px;
+    }
+    .info p {
+        font-size: 130%;
+    }
+    .info span {
+        font-size: 150%;
+    }
+    .card-ico span {
+        font-size: 140%;
+    }
+    .card-pic span {
+        font-size: 140%;
+    }
+    .card-pic p {
+        font-size: 140%;
     }
 }
 
@@ -467,12 +476,58 @@ form button {
     body {
         font-size: 8px;
     }
-
-    .map,.contact {
-        width: 100vw;
+    .slides {
+        margin-bottom: 20px;
     }
 
-    .ico-txt {
+    .previous, .next {
+        margin: -8% 0 0 0;
+    }
+
+    .first-text div{
+        width: 80%;
+    }
+
+    .first-text div:nth-child(odd){
+        width: 65%;
+        margin: auto;
+    }
+
+    .thread-text {
+        font-size: 100%;
+    }
+
+    .info {
+        padding-top: 0;
+    }
+
+    .info-title {
+        font-size: 200%;
+        margin-bottom: 5px;
+    }
+
+    .cards {
+        margin: 10px auto;
+    }
+
+    .card-ico span {
+        font-size: 140%;
+    }
+
+    .card-ico p {
+        font-size: 100%;
+    }
+
+    .panel-grey p {
+        font-size: 100%;
+    }
+
+    .contact span{
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .map,.contact {
         width: 100%;
     }
 
