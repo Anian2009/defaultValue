@@ -33,6 +33,6 @@ $(document).ready(function () {
         for(i=0; i<slides.length;i++){
             slides[i].style.display = 'none';
         }
-        slides[sliderIndex-1].style.display = "block";
+        slides[sliderIndex-1].style.display = "flex";
     }
 });

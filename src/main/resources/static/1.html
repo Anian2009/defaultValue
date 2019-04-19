@@ -2,10 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--    <link href="css/style.css" type="text/css" rel="stylesheet">-->
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type='text/javascript' src='js/index.js'></script>
     <title>Document</title>
     <style>
+        .slideshow-container {
+            max-width: 100vw;
+            min-width: 270px;
+            position: relative;
+            margin: auto;
+        }
+
+        .slides {
+            position: relative;
+            margin-bottom: 50px;
+            /*display: flex;*/
+            flex-direction: column;
+        }
+
+        .slides img {
+            width: 100%;
+        }
+
+        .first-text, .second-text {
+            color: #f2f2f2;
+            font-size: 52px;
+            padding: 8px 12px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, 0);
+        }
+        .first-text {
+            top: 30%;
+        }
+
+        .second-text {
+            top: 60%;
+        }
+
+        .thread-text {
+            color: #f2f2f2;
+            /*position: absolute;*/
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 30px;
+            padding: 20px 0;
+            /*top: 98%;*/
+            background: #F26B47;
+            width: 100%;
+        }
+
+        .previous, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: red;
+            font-weight: bold;
+            font-size: 35px;
+            transition: 1s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .next{
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .previous:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
 
 
         @media (max-width: 960px) {
@@ -25,6 +114,70 @@
 <body>
 <p></p>
 <div></div>
+
+
+
+<div class="slideshow-container">
+
+    <div class="slides fade">
+
+        <img src="image/slide-1.1.jpg" alt="slide1">
+<!--        <div class="first-text">-->
+<!--            <span>Welcome To UIBrush</span>-->
+<!--        </div>-->
+<!--        <div class="second-text">-->
+<!--            <span>Wi Provide Ultimate Templates</span>-->
+<!--        </div>-->
+        <div class="thread-text">
+            <span>Lorem ipsum dolor sit  amet CONSECTETUER ADIPISCING ELIT</span>
+        </div>
+    </div>
+
+    <div class="slides fade">
+        <img src="image/slide-2.1.jpg" alt="slide2">
+        <div class="first-text">
+            <span>Spices</span>
+        </div>
+        <div class="second-text">
+            <span>of the eastern countries</span>
+        </div>
+        <div class="thread-text">
+            <span>Description of spices from Japan, China and India</span>
+        </div>
+    </div>
+
+    <div class="slides fade">
+        <img src="image/slide-3.1.jpg" alt="slide3">
+        <div class="first-text">
+            <span>Spices</span>
+        </div>
+        <div class="second-text">
+            <span>from Italy</span>
+        </div>
+        <div class="thread-text">
+            <span>Description of spices from Italy</span>
+        </div>
+    </div>
+
+    <div class="slides fade">
+        <img src="image/slide-4.1.jpg" alt="slide4">
+        <div class="first-text">
+            <span>Goods</span>
+        </div>
+        <div class="second-text">
+            <span>from around the world</span>
+        </div>
+        <div class="thread-text">
+            <span>Description of goods from different parts of the world</span>
+        </div>
+    </div>
+
+    <a class="previous">&#10094</a>
+    <a class="next">&#10095</a>
+</div>
+
+
+
 
 </body>
 </html>

@@ -1,6 +1,7 @@
 body{
     min-width: 270px;
-    font-family: Unbuntu, monospace;
+    font-family: Ubuntu, fantasy;
+    font-size: 20px;
 }
 
 .navigation,
@@ -40,11 +41,7 @@ body{
     font-size: 20px;
 }
 
-.one img{
-    margin: auto;
-}
-
-.item {
+.one img, .item{
     margin: auto;
 }
 
@@ -108,53 +105,48 @@ body{
 
 .slides {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    /*font-size: 1em;*/
 }
 
 .slides img {
     width: 100%;
 }
 
-.first-text {
+.first-text{
     color: #f2f2f2;
-    font-size: 52px;
-    padding: 8px 12px;
+    font-size: 150%;
     position: absolute;
-    top: 30%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    background: rgba(0,0,0,0.5);
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
+    top: 34%;
+    width: 100%;
 }
 
-.second-text {
-    color: #f2f2f2;
-    font-size: 52px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 60%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background: rgba(0,0,0,0.5);
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%,0);
+.first-text div{
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+}
+.first-text div:nth-child(odd){
+    width: 35%;
 }
 
 .thread-text {
     color: #f2f2f2;
-    font-size: 30px;
-    padding: 20px 0;
-    position: absolute;
-    top: 91%;
     display: flex;
     justify-content: center;
-    background: #F26B47;
     text-align: center;
+    font-size: 160%;
+    padding: 40px 0;
+    background: #F26B47;
     width: 100%;
 }
 
@@ -163,11 +155,11 @@ body{
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: red;
+    margin: -8% 50px 0 50px;
+    padding: 0 25px;
+    color: rgba(255, 0, 0, 0.71);
     font-weight: bold;
-    font-size: 35px;
+    font-size: 350%;
     transition: 1s ease;
     border-radius: 0 3px 3px 0;
 }
@@ -193,15 +185,11 @@ body{
     to {opacity: 1}
 }
 
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
 /************************Slider********************************/
 
 /************************InfoBlock********************************/
 .info {
-    font-size: 14px;
+    font-size: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,10 +201,12 @@ body{
 }
 
 .info-title {
-    font-size: 18px;
+    font-size: 140%;
+    font-weight: bolder;
     color: red;
     text-decoration: underline;
-    padding-top: 16px;
+    margin-bottom: 30px;
+    /*padding-top: 30px;*/
 }
 
 .info-title span {
@@ -233,13 +223,13 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    margin-top: 50px;
+    margin: 50px auto;
 }
 
 .card-ico {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 40%;
     align-items: center;
     padding: 10px 0;
 }
@@ -384,12 +374,15 @@ form button {
     .two {
         width: 77%;
     }
-    .first-text,.second-text {
-        font-size: 27px;
+    body {
+        font-size: 15px;
     }
-    .thread-text {
-        font-size: 18px;
-    }
+    /*.first-text,.second-text {*/
+    /*    font-size: 27px;*/
+    /*}*/
+    /*.thread-text {*/
+    /*    font-size: 18px;*/
+    /*}*/
     .ico-txt, form input {
         width: 80%;
     }
@@ -401,9 +394,17 @@ form button {
     .card-ico, .card-pic{
         width: 90%;
     }
+
+    .previous, .next {
+        margin: -8% 25px 0 25px;
+    }
 }
 
 @media (max-width: 720px) {
+    body {
+        font-size: 10px;
+    }
+
     .two {
         display: block;
         clear: right;
@@ -437,14 +438,13 @@ form button {
         top: 110px;
         transition: 0.5s
     }
-    .first-text,.second-text {
-        font-size: 27px;
-    }
     .thread-text {
-        font-size: 15px;
+        padding: 20px 0;
     }
 
-
+    .first-text {
+        top: 20%;
+    }
 
     .cards {
         flex-direction: column;
@@ -458,16 +458,15 @@ form button {
         width: 80vw;
         margin: 25px 10px;
     }
+    .previous, .next {
+        margin: -8% 10px 0 10px;
+    }
 }
 
 @media (max-width: 540px) {
-    .first-text,.second-text {
-        font-size: 18px;
+    body {
+        font-size: 8px;
     }
-    .thread-text {
-        font-size: 10px;
-    }
-
 
     .map,.contact {
         width: 100vw;
